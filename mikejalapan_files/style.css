@@ -1,0 +1,122 @@
+/*!************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/primary-image/style.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************/
+@keyframes float {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(0, 1rem);
+  }
+}
+@keyframes float-sm {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(0, 0.33rem);
+  }
+}
+.wp-block-boldlygo-primary-image {
+  position: relative;
+  display: block;
+  width: 100%;
+  border-radius: var(--wp--custom--border-radius--md);
+}
+.wp-block-boldlygo-primary-image a {
+  display: block;
+  padding: 0.5rem;
+}
+.wp-block-boldlygo-primary-image a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--wp--custom--border-radius--md);
+  transition: -webkit-backdrop-filter var(--wp--custom--transitions--default);
+  transition: backdrop-filter var(--wp--custom--transitions--default);
+  transition: backdrop-filter var(--wp--custom--transitions--default), -webkit-backdrop-filter var(--wp--custom--transitions--default);
+}
+@media prefers-reduced-motion {
+  .wp-block-boldlygo-primary-image a::before {
+    transition: none;
+  }
+}
+.wp-block-boldlygo-primary-image a:hover::before, .wp-block-boldlygo-primary-image a:focus::before {
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+.wp-block-boldlygo-primary-image__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 16/10;
+}
+.wp-block-boldlygo-primary-image__image img {
+  min-width: 0;
+  min-height: 0;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  margin: auto;
+  display: block;
+  border-radius: var(--wp--custom--border-radius--sm);
+}
+.wp-block-boldlygo-primary-image__featured-image {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: -3rem;
+  width: 100%;
+  height: 6rem;
+  pointer-events: none;
+  transition: all var(--wp--custom--transitions--default);
+}
+@media prefers-reduced-motion {
+  .wp-block-boldlygo-primary-image__featured-image {
+    transition: none;
+  }
+}
+.wp-block-boldlygo-primary-image__featured-image img {
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: var(--wp--preset--color--muted);
+  box-shadow: rgba(var(--wp--custom--colors-rgb--midtone), 0.25) 0 0 0 0.25rem;
+  transition: all var(--wp--custom--transitions--default);
+}
+@media prefers-reduced-motion {
+  .wp-block-boldlygo-primary-image__featured-image img {
+    transition: none;
+  }
+}
+.wp-block-boldlygo-primary-image a:hover .wp-block-boldlygo-primary-image__featured-image img, .wp-block-boldlygo-primary-image a:focus .wp-block-boldlygo-primary-image__featured-image img {
+  transform: scale(1.5);
+  box-shadow: rgba(var(--wp--custom--colors-rgb--midtone), 0.75) 0 0 2rem;
+}
+.wp-block-boldlygo-primary-image a:active .wp-block-boldlygo-primary-image__featured-image img {
+  transition: all var(--wp--custom--transitions--fast);
+  transform: scale(1.45);
+  box-shadow: rgba(var(--wp--custom--colors-rgb--midtone), 0.25) 0 0 0 0.25rem;
+}
+.wp-block-boldlygo-primary-image a:hover .wp-block-boldlygo-primary-image__featured-image, .wp-block-boldlygo-primary-image a:focus .wp-block-boldlygo-primary-image__featured-image {
+  bottom: 0;
+  height: 100%;
+}
+.wp-block-boldlygo-primary-image a:active .wp-block-boldlygo-primary-image__featured-image {
+  animation: none;
+  transform: translateY(0.25rem);
+}
+
+/*# sourceMappingURL=style.css.map*/
